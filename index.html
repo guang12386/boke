@@ -1,0 +1,584 @@
+<!-- 开头介绍 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">   <!--网页的语言-->
+<head>
+<meta charset="utf-8">    <!--网页的字体编码-->
+<title>欢迎老板来到Vinnet特权</title>   <!--进入网页时的标题-->
+
+<!-- 样式表 -->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!--网页标志图标-->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- 具体的可以命名的结构框架 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper default-version">
+ 	
+    <!-- 不知名的背景（暂时还没发现） -->
+    <div class="preloader"></div>
+
+    <div class="page-background">
+        <div class="image-1"><img src="images/icons/shape/icon-1.png" alt=""></div>
+        <div class="image-7"><img src="images/icons/shape/icon-7.png" alt=""></div>
+        <canvas id="canvas"></canvas>
+    </div>
+    
+    <!-- 主菜单 -->
+    <div class="mobile-menu">
+        <div class="container">
+            <!--标志-->
+            <div class="nav-outer clearfix">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->      
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="navbar-collapse collapse scroll-nav clearfix">
+                        <ul class="navigation clearfix">
+                         <!--手机端的菜单字体显示-->   
+                            <li class="current"><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#work">Works</a></li>
+                           
+
+                         </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->                        
+            </div>
+            <!--Nav Outer End-->            
+        </div>
+    </div>
+ <!-- 个人主页的简介	 -->
+    <div class="card-outer">
+        <div class="scroll-box">
+            <div class="container" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+                <div class="card-wrapper">
+                    <div class="author-info" style="background-image:url(images/background/3.jpg)">
+                        <div class="image"><img src="images/resource/user.png" alt=""></div>
+                        <div class="author">
+                            <h3>光头强</h3>
+                            <div>
+                                <p><strong>你必须成为你希望看到的改变。 —— 马哈特马·甘地</strong></p>
+                            </div>
+                        </div>
+                        <!-- "关于界面"自己命名的链接以及距离控制 -->
+                        <div class="link-btn">
+                            <a href="https://t.me/guang8886667" class="theme-btn btn-style-one">Telegram联系方式</a>
+                            <style>
+                                .link-btn{
+                                    display: inline-block;
+                                    margin-top: 50px;
+                                }
+                            </style>
+                        </div>
+                        <!-- <ul class="social-icon-two">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+                        </ul> -->
+                    </div>
+                    <!-- 菜单上的按钮表达 -->
+                    <div class="card-inner-box">
+                        <header class="header wow fadeInLeft" data-wow-duration="1.5s">
+                            <ul class="main-menu">
+                                <li class="active home"><a class="logo" href="#home"><img src="images/logo.png" alt=""></a></li>
+                                <li><a href="#about"><i class="flaticon-social"></i>查看资料</a></li>
+                                <li><a href="#resume"><i class="flaticon-curriculum"></i>疑难解答</a></li>
+                                <li><a href="#services"><i class="flaticon-layers-1"></i>特色介绍</a></li>
+                                <li><a href="#blog"><i class="flaticon-blog"></i>适配介绍</a></li>
+                                <li><a href="#work"><i class="flaticon-tools"></i>图片介绍</a></li>
+                                <!-- <li><a href="#contact"><i class="flaticon-send-mail"></i>Contact</a></li> -->
+                            </ul>
+                        </header>
+
+                        <!-- card item -->
+                        <div class="card-home card-item active" id="home" style="background-image:url(images/background/1.jpg)">
+
+                            <div class="card-inner wow fadeInUp" data-wow-duration="2s">
+                                <div class="image"><img src="images/resource/user.png" alt=""></div>
+                                <div class="author">
+                                    <h3>光头强</h3>
+                                    <div>
+                                        <p><strong>成为你所想成为的改变，来自于你自己。—— 马哈特马·甘地</strong></p>
+                                    </div>
+                                </div>                              
+                                <div class="link-btn">
+                                    <a href="https://t.me/Vinnet_Pri" class="theme-btn btn-style-one">加入Tg群聊</a>                                   
+                                    <a href="https://qm.qq.com/q/Vf3ceKdBSs" class="theme-btn btn-style-one">  加入QQ群聊  </a>
+                                </div>
+                                <div>
+                                    <a href="https://t.me/guang8886667" class="theme-btn btn-style-one">联系TG个人账号</a>
+                                    <a href="https://qm.qq.com/q/iKPASi8yPu" class="theme-btn btn-style-one">联系QQ个人账号</a>
+                                </div>
+                                <div>
+                                    <strong><a href="https://guang12386.github.io/vinnet/" class="move-link">页面太乱？点击查看精简版！</a></strong>
+                                    <style>
+                                        .move-link{
+                                            display: inline-block;
+                                            margin-top: 20px;
+                                        }
+                                    </style>
+                                </div>
+                                <!-- <ul class="social-icon-two">
+                                    <li><a href="mailto:guang8886667@gmail.com"><span class="fa fa-google"></span></a></li>
+                                    <li><a href="https://t.me/guang8886667"><span class="fa fa-telegram"></span></a></li>
+                                    <li><a href="https://qm.qq.com/q/iKPASi8yPu"><span class="fa fa-qq"></span></a></li>
+                                </ul> -->
+                            </div>
+                            
+                        </div>
+                        <!-- end item -->
+
+                        <!-- card item -->
+                        <div class="card-about card-item" id="about" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <strong><h2 class="title">简介</h2></strong>
+                                <div class="text">没什么好说的,我可以帮助你使用王者荣耀商户特权</div>
+                                <div class="info-list">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-style-one">
+                                                <li><strong>称呼:</strong>  光头强</li>
+                                                <li><strong>QQ:</strong>  2568884334</li>
+                                                <li><strong>地址:</strong>  总裁的30米大床</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-style-one">
+                                                <li><strong>邮箱:</strong>  guang8886667@gmail.com</li>
+                                                <li><strong>待补充:</strong>  test</li>
+                                                <li><strong>待补充:</strong>  test</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                                <h4 class="title">你今天的各项指数</h4>
+                                <div class="row">
+                                    <!-- About Block -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#9147ff" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="100">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="100" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>幸福</h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- About Block -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#ff5e7e" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="100">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="100" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>开心</h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- About Block -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#ffc713" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="100">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="100" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>帅气 </h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- About Block -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#51dbc3" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="100">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="100" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>幸运 </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                        <!-- card item -->
+                        <div class="card-resume card-item" id="resume" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <div>
+                                    <style>
+                                        h2{
+                                            margin-top: 10px;
+                                        }
+                                    </style>
+                                    <h2><strong>王者荣耀商户特权的介绍与疑难问题解答</strong></h2>
+                                </div>
+                                <div class="row clearfix">
+                                    <!--Column-->
+                                    <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="inner">
+                                            <div class="col-header"><div class="icon-box"><div class="icon-inner"><div class="icon"><span class="flaticon-book"></span></div></div></div> <h2>疑难介绍</h2></div>
+                                            
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>什么是商户特权</h4>
+                                                    <div class="text">全国的个别门店与王者荣耀官方进行合作，当客户到达门店内即可一使用王者官方给予商户的福利，这种门店叫做特权商户。 </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>特权的原理</h4>
+                                                    <div class="text">通过修改你的个人位置信息实现模拟到我们有管理员的特权商户门店享受特权的待遇，此行为只是修改了你的个人位置信息，并不会造成封号，所以玩家可以请放心使用。</div>
+                                                </div>
+                                            </div>
+
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>特权的作用</h4>
+                                                    <div class="text">可以使用王者官方给商户的福利,一般为98个英雄,99个皮肤,以及五级铭文特权的使用,排位巅峰赛均可使用。 </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Column-->
+                                    <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="inner">
+                                            <div class="col-header"><div class="icon-box"><div class="icon-inner"><div class="icon"><span class="flaticon-case"></span></div></div></div> <h2>问题解答</h2></div>
+                                            
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>我的账号以前验证过别的特权异常了,现如今还能够正常的去验证吗？</h4>
+                                                    <div class="text">用我们的是可以正常使用的,因为我们的是无视异常,即便你的账号异常了也可以使用。 </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>用我们的特权会导致三方吗？</h4>
+                                                    <div class="text">并不会，试问一下你从你家到另一个城市的王者荣耀特权馆会导致你的游戏账号三方吗？答案是不会的,我们的技术也只是模拟一下你的位置,所以是不会导致三方以及封号的。 </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>我已经购买了,但是我不会使用该怎么办呢？</h4>
+                                                    <div class="text">可以直接联系光头强进行腾讯会议,我们的售后是一流的,请放心使用即可。</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!--特色介绍 -->
+                        <div class="card-services card-item" id="services" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <div>
+                                    <style>
+                                        h2{
+                                            margin-top: 20px;
+                                        }
+                                    </style>
+                                    <h2><strong>我们的优势</strong></h2>
+                                </div>
+                                <div class="row">
+                                <!-- 稳定 -->
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box submit">
+                                            <div class="icon-box"><span class="fa fa-check"></span></div>
+                                            <h4><a href="blog-single.html">极致的稳定</a></h4>
+                                            <div class="text">线下具有特权店的身份，我们可以做到百分百稳定。 </div>
+                                        </div> 
+                                    </div>
+                                <!-- 效率 -->
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-folder"></span></div>
+                                            <h4><a href="blog-single.html">独特的思路</a></h4>
+                                            <div class="text">支持刷入内核一样用.sh脚本去验证。 </div>
+                                        </div> 
+                                    </div>
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="fa fa-shield"></span></div>
+                                            <h4><a href="blog-single.html">安全的验证</a></h4>
+                                            <div class="text">无需借助任何模块，防止以及避免了三方工具等原因。</div>
+                                        </div> 
+                                    </div>
+                                <!-- 适配 -->
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-layers-1"></span></div>
+                                            <h4><a href="blog-single.html">全面的适配</a></h4>
+                                            <div class="text">安卓与iOS全机型（无论你是否root），免越狱皆可正常使用。</div>
+                                        </div> 
+                                    </div>
+                                <!-- 态度 -->
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-web-design"></span></div>
+                                            <h4><a href="blog-single.html">认真的态度</a></h4>
+                                            <div class="text">坚守在岗位，回信息从不拖延。 </div>
+                                        </div> 
+                                    </div>
+                                <!-- 一流的售后 -->
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="fa fa-user"></span></div>
+                                            <h4><a href="blog-single.html">一流的售后</a></h4>
+                                            <div class="text">我们的售后方面从来都不会让人失望，全网最顶尖的售后。</div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- 特权教程 -->
+                        <div class="card-blog card-item" id="blog" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <div>
+                                    <style>
+                                        h2{
+                                            margin-top: 20px;
+                                        }
+                                    </style>
+                                    <h2><strong>各个适配的设备详细介绍</strong></h2>
+                                </div>
+                                
+                                <div class="news-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="images/resource/blog-1.jpg" alt="">
+                                            <div class="overlay">
+                                                <a class="link-btn" href="blog-single.html">
+                                                    <i class="fa fa-link"></i>
+                                                </a>                                 
+                                            </div>
+                                        </div>
+                                        <div class="date"><strong>安卓</strong><br>❤</div>
+                                        <div class="lower-content">
+                                            <h4><a href="blog-single.html">点击图片查看详情</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="images/resource/blog-2.jpg" alt="">
+                                            <div class="overlay">
+                                                <a class="link-btn" href="ios.html">
+                                                    <i class="fa fa-link"></i>
+                                                </a>                                
+                                            </div>
+                                        </div>
+                                        <div class="date"><strong>iOS</strong> <br>❤</div>
+                                        <div class="lower-content">
+                                            <h4><a href="ios.html">点击图片查看详情</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="images/resource/blog-2.jpg" alt="">
+                                            <div class="overlay">
+                                                <a class="link-btn" href="ios.html">
+                                                    <i class="fa fa-link"></i>
+                                                </a>                                
+                                            </div>
+                                        </div>
+                                        <div class="date"><strong>iOS</strong> <br>❤</div>
+                                        <div class="lower-content">
+                                            <h4><a href="ios.html">点击图片查看详情</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="card-projects card-item" id="work" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title">Works</h4>
+                                <div class="row">
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/1.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/1.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Portfolio Item Title</a></h3>
+                                                <span>Branding, Print</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/2.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/2.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Portfolio Item Title</a></h3>
+                                                <span>Branding, Print</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/3.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/3.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Portfolio Item Title</a></h3>
+                                                <span>Branding, Print</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/4.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/4.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Portfolio Item Title</a></h3>
+                                                <span>Branding, Print</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-sm-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/5.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/5.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Portfolio Item Title</a></h3>
+                                                <span>Branding, Print</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-sm-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/6.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/6.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Portfolio Item Title</a></h3>
+                                                <span>Branding, Print</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- card item -->
+                        <!-- end item -->
+
+
+                        <!-- end item -->
+
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+            
+    </div>
+
+</div>
+<!--End pagewrapper-->
+
+
+<script src="js/jquery.js"></script> 
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/element-in-view.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/mousemoveparallax.js"></script>
+<script src="js/pagenav.js"></script>
+<script src="js/jquery-type.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/particle-alone.js"></script>
+<script src="js/script.js"></script>
+
+<!--Google Map APi Key-->
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
+<script src="js/gmaps.js"></script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
+
+</body>
+</html>
